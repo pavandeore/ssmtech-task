@@ -1,0 +1,94 @@
+*{
+    font-family: arial;
+    font-size: 18px;
+  }
+  [placeholder]{
+    text-align: center;
+  }
+  input{
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  ul li{
+    list-style: none;
+  }
+  #btn{
+    padding: 5px;
+    width: 100px;
+    border-radius: 2px;
+  }
+  #btn:hover{
+    color: white;
+    background: #252525;
+    transition: 0.5s;
+  }
+  #instructions-list li{
+    padding: 5px;
+  }
+  #instructions-list li:hover{
+    margin-left: 20px;
+    border-left: 10px solid steelblue;
+    transition: 0.5s;
+  }
+  #options{
+    padding: 5px;
+    width: 100px;
+  }
+  #header{
+    text-align:center;
+    background: #252525;
+    color: white;
+    padding: 10px;
+    border-left: 40px solid red;
+    border-bottom-left-radius: 20px;
+  }
+  #header:hover{
+    border-left: 100px solid red;
+    transition: 0.5s;
+  }
+  #title{
+    font-size:24px;
+  }
+  #main-div{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  #a, #b, #c, #d{
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  #list-div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  #plusList{
+    color: green;
+    opacity: 0.7;
+  }
+  #plusList li{
+    padding: 10px 0px;
+    margin-top: 5px;
+  }
+  #minusList li{
+    padding: 10px 0px;
+    margin-top: 5px;
+  }
+  #minusList{
+    color: red;
+    opacity: 0.7;
+  }
+  @media(max-width: 1000px){
+   #main-div{
+     display: flex;
+     flex-direction: column;
+   }
+    #a, #b, #c, #d{
+    margin: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  }

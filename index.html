@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Expense Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+  <h2 id="title">Expense Management</h2>
+</div>
+<br/>
+<div id="instructions">
+  <h2>Instructions*</h2>
+  <ul id="instructions-list">
+    <li>To add item click Submit Button</li>
+    <li>To delete item click Delete Button</li>
+    <li>To edit item click on item itself.</li>
+  </ul>
+</div>
+<div id="main-div">
+  <div id="a">
+    <select id="options">
+      <option selected disabled>Select</option>
+      <option value="plus">+</option>
+      <option value="minus">-</option>
+    </select>
+  </div>
+  <div id="b">
+    <input type="text" id="desc" placeholder="Describe Here " />
+  </div>
+  <div id="c">
+    <input type="number" id="amnt" placeholder="Amount Here" />
+  </div>
+  <div id="d">
+    <button id="btn" onclick=execute()>Submit</button>  
+  </div>
+</div>
+<div id="list-div">
+
+  <div>
+  <h2 style="color: green; margin-left: 39px;">CREDIT</h2>
+  <ul id="plusList">  
+    
+  </ul>
+  </div>
+  <div>
+  <h2 style="color: red; margin-left: 39px;">DEBIT</h2>
+  <ul id="minusList">
+    
+  </ul>
+  </div>
+
+</div>
+
+<script src="script.js">
+</script>
+</body>
+</html>
